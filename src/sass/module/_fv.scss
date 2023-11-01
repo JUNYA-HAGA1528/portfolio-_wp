@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.fv{
+    position: relative;
+}
+
+.fv__slide img{
+    aspect-ratio: 1440/768;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+  
+.heading{
+    color: $white;
+    position: absolute;
+    top: 43.8%;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    @include mq(md){
+        top: 47%;
+    }
+}
+
+.heading__title{
+    font-family: $font-lato;
+    font-size: rem(40);
+    font-weight: $regular;
+    line-height:1.2;
+    letter-spacing: 0.3em;
+    text-indent:0.3em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @include mq(md){
+        font-size: rem(80);
+        font-weight: $regular;
+        line-height:1.25;
+    }
+}
+
+.heading__subtitle{
+    font-family: $font-gotu;
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height:1.75;
+}

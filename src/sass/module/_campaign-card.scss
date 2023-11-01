@@ -1,0 +1,158 @@
+@use "global" as *;
+
+.campaign-card{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+	box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+}
+
+.campaign-card__img img {
+	aspect-ratio: 280/188;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	@include mq(md){
+		aspect-ratio: 333/223;	
+	}
+}
+
+.campaign-card__body{
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+	padding:rem(16) rem(16) rem(24) rem(16);
+	color: $brown;
+	background-color: #FFF8EF;
+	@include mq(md){
+		padding: rem(24) rem(16) rem(32);
+	}
+}
+
+.campaign-card__meta{
+	display: inline-block;
+	padding: rem(3) rem(11);
+	border: rem(1) solid $brown;
+	color: $brown;
+	font-size: rem(12);
+	font-weight: $regular;
+	line-height: calc(22/12);
+	text-align: center;
+	@include mq(md){
+		padding: rem(5.5) rem(15);
+	}
+}
+
+.campaign-card__title{
+	text-align: center;
+	margin-top: rem(12);
+	padding-bottom: rem(8);
+	border-bottom: rem(1) solid $brown;
+	font-size: rem(12);
+	font-weight: $bold;
+	line-height: calc(24/16);
+	flex-grow: 1;
+	@include mq(md){
+		font-size: rem(16);
+	}
+}
+
+.campaign-card__wrapper{
+	margin-top: rem(8);
+	@include mq(md){
+		margin-top: rem(20);
+	}
+}
+
+.campaign-card__subtitle{
+	color: $brown;
+	font-weight: $bold;
+	font-size: rem(30);
+	line-height: calc(24/14);
+	text-align: center;
+	@include mq(md){
+		font-size: rem(36);
+		line-height: calc(24/16);
+	}
+}
+
+.campaign-card__price{
+	display: flex;
+	justify-content: center;
+	font-size: rem(14);
+	font-family: "Lato", sans-serif;
+	font-weight: $bold;
+    margin-top: rem(20);
+	@include mq(md){
+		font-size: rem(16)
+	}
+}
+
+.campaign-card__price-before {
+	position: relative;
+	display: flex;
+	align-items: center;
+	line-height: 1;
+}
+
+.campaign-card__price-after {
+    line-height: 1;
+	margin-left: rem(16);
+	@include mq(md){
+		margin-left: rem(25);
+	}
+}
+
+
+
+
+
+/*下層ページ*/
+.aside__item--calc{
+	width: 100%;
+}
+
+.campaign-card__img--calc{
+	aspect-ratio: 280/188;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	@include mq(md){
+		aspect-ratio: 294/188;	
+	}
+}
+
+.campaign-card__body--calc{
+	padding:rem(16) rem(16) rem(24) rem(16);
+	@include mq(md){
+		padding: rem(11.5) rem(16) rem(24);
+	}
+}
+
+.campaign-card__title--calc{
+	text-align: center;
+}
+
+.campaign-card__wrapper--calc{
+	margin-top: rem(8);
+	@include mq(md){
+		margin-top: rem(8);
+	}
+}
+
+.campaign-card__subtitle--calc{
+	font-weight: $bold;
+	font-size: rem(24);
+	line-height: calc(24/14);
+	text-align: center;
+	@include mq(md){
+		font-size: rem(32);
+		line-height: calc(24/16);
+	}
+}
+
+.campaign-card__price-after--calc{
+	@include mq(md){
+		margin-left: rem(16);
+	}
+}

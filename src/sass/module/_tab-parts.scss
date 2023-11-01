@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.tab-parts__flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(16.5) rem(21);
+    @include mq("md") {
+        gap: rem(0) rem(32);
+    }
+}
+
+.tab-parts__tab {
+    width: 100%;
+    max-width: rem(162);
+    background: $white;
+    padding: rem(5) 0;
+    color: $brown;
+    font-size: rem(14);
+    text-align: center;
+    border: 1px solid $brown;
+    transition: 0.3s opacity;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tab-parts__tab:hover {
+    opacity: 0.8;
+  }
+
+.tab-parts__tab.current {
+    background-color: $brown;
+    color: $white;
+}

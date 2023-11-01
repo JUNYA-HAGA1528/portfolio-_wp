@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.page-blog__inner{
+    position: relative;
+    max-width: $max-width;
+}
+
+.page-blog__wrapper{
+    @include mq(md){
+        display: flex;
+        gap: 7.41%;
+    }
+}
+
+.page-blog__main{
+    @include mq(md){
+        width: 72%;
+    }
+}

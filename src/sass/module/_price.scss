@@ -1,0 +1,103 @@
+@use "global" as *;
+
+.price{
+    background-color: #FFF8EF;
+    position: relative;
+}
+
+.price::before {
+    @include mq(md){
+        background-image: url(../images/common/voice_fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: rem(20);
+        left: calc(50% - min(48%, rem(550)));
+        width: rem(100);
+        /* height指定しないと表示されないので、ここは指定する */
+        height: rem(162);
+    }
+}
+
+.price__inner{
+	position: relative;
+    max-width: $max-width;
+}
+
+.price__body{
+    margin-top: rem(24);
+    @include mq(md){
+        margin-top: rem(40);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.price__img{
+    @include mq(md){
+       width: 50%;
+       margin-left: rem(93);
+    }
+}
+
+.price__img img {
+    aspect-ratio: 345/227;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 492/746;
+    }
+}
+
+.price__menu{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        width: 50%;
+    }
+}
+
+.price__items + .price__items{
+    margin-top: rem(40);
+}
+
+.price__title{
+    font-size: rem(16);
+    font-weight:$bold;
+    line-height: calc(24/16);
+    border-bottom: rem(1) solid $brown;
+    padding-bottom: rem(4);
+}
+
+.price__item{
+    margin-top: rem(8);
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: calc(24/14);
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(md){
+        font-size: rem(16);
+        line-height: calc(24/16);
+    }
+}
+
+.price__item dt {
+    width: 67%;
+}
+
+.price__item dd {
+    width: 33%;
+    text-align: right;
+}
+
+.price__button{
+    margin-top: rem(40);
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}

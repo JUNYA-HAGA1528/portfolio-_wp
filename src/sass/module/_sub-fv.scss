@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.sub-fv__inner{
+    position: relative;
+}
+
+.sub-fv__heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include mq(md){
+        top: 59%;
+    }
+}
+
+.sub-fv__text{
+    color: $white;
+    font-family: $font-lato;
+    font-size: rem(40);
+    font-weight: $regular;
+    line-height: 1;
+    @include mq(md){
+        font-size: rem(80);
+        line-height: calc(100/80);
+    }
+}
+
+.sub-fv__text--norap{
+    white-space: nowrap;
+}
+
+.sub-fv img{
+    height: rem(460);
+    object-fit: cover;
+    @include mq(md){
+        height: rem(548);
+        
+    }
+}
