@@ -152,7 +152,7 @@
                                     <h3 class="campaign-card__title campaign-card__title--calc"><?php the_field('cat_type'); ?></h3>
                                     <div class="campaign-card__wrapper campaign-card__wrapper--calc">
                                         <p class="campaign-card__subtitle campaign-card__subtitle--calc"><?php the_title(); ?></p>
-                                        <div class="campaign-card__price">
+                                        <div class="campaign-card__price campaign-card__price-before--calc">
                                             <?php if( have_rows('campaign_cat') ): the_row(); ?>
                                                 <?php $campaign_cat1 = get_sub_field('cat1'); ?>
                                                 <?php $campaign_cat2 = get_sub_field('cat2'); ?>

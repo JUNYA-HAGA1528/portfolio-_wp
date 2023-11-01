@@ -204,7 +204,7 @@
                         <a href="<?php echo $contact ?>">
                             <div class="pc-nav__wrapper">
                                 <p class="pc-nav__en">contact</p>
-                                <p class="pc-nav__ja">お問合せ</p>
+                                <p class="pc-nav__ja">お問い合わせ</p>
                             </div>
                         </a>
                     </li>

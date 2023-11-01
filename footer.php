@@ -28,7 +28,7 @@
                         </div>
                         <div class="contact__information-contents">
                             <div class="contact__information-text">
-                                <p>東京都新宿区1-2-</p>
+                                <p>東京都新宿区1-2-3</p>
                                 <p>TEL:0120-345-6789</p>
                                 <p>営業時間:11:00-20:00</p>
                                 <p>定休日:毎週水曜日</p>

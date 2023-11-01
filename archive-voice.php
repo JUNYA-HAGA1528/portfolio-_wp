@@ -92,9 +92,9 @@
                                         </div>
                                     </div>
                                     <div class="voice-card__sentence">
-                                        <p class="voice-card__text">
+                                        <div class="voice-card__text">
                                             <?php the_content(); ?>
-                                        </p>
+                                        </div>
                                     </div>
                                 </li>
                             <?php endwhile; ?>

@@ -4,29 +4,25 @@
 head読み込み
 =========================================================*/
 function enqueue_custom_styles_scripts() {
-    // Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap', array(), null, 'all');
-    
-    // Swiper CSS
-    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', array(), null, 'all');
+  // Google Fonts
+  wp_enqueue_style('google-fonts-1', 'https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+  wp_enqueue_style('google-fonts-2', 'https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;700&display=swap');
+  wp_enqueue_style('google-fonts-3', 'https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
 
-    // Your custom CSS
-    wp_enqueue_style('custom-css', get_theme_file_uri() . '/dist/assets/css/style.css', array(), null, 'all');
+  // CSS
+  wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
+  wp_enqueue_style('custom-css', get_template_directory_uri() . '/dist/assets/css/style.css');
 
-    // jQuery
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', array(), null, true);
-
-    // Swiper JS
-    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), null, true);
-
-    // InView JS
-    wp_enqueue_script('inview-js', get_theme_file_uri() . '/dist/assets/js/jquery.inview.min.js', array('jquery'), null, true);
-
-    // Your custom script
-    wp_enqueue_script('custom-script', get_theme_file_uri() . '/dist/assets/js/script.js', array('jquery'), null, true);
+  // JavaScript
+  wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', array(), '3.6.0', true);
+  wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array('jquery'), '9.0.0', true);
+  wp_enqueue_script('inview-js', get_template_directory_uri() . '/dist/assets/js/jquery.inview.min.js', array('jquery'), null, true);
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/dist/assets/js/script.js', array('jquery'), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_styles_scripts');
+
+
 
 
 

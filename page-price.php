@@ -47,7 +47,7 @@
                         <span class="page-price__img u-desktop">
                             <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/contact_fish.png" alt="猫の足跡のロゴ"/>
                         </span>
-                        <span>入場料金（1名様分）</span>
+                        <span>入場料金（１名様分）</span>
                     </h3>
                     <dl class="page-price__list">
                         <?php
