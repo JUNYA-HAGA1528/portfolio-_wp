@@ -19,7 +19,7 @@
         <div class="sub-fv__inner">
             <picture>
                 <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/blog_fv_pc.jpg" media="(min-width: 768px)">
-                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/blog_fv_sp.jpg" alt="浜辺">
+                <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/blog_fv_pc.jpg" alt="浜辺">
             </picture>
             <div class="sub-fv__heading">
                 <h1 class="sub-fv__text">Blog</h1>
@@ -40,7 +40,7 @@
     
     <main>
     <section class="top-page-blog page-blog fish-logo">
-        <div class="page-blog __inner inner">
+        <div class="page-blog__inner inner">
             <div class="page-blog__wrapper">
 
                 <!--main-->

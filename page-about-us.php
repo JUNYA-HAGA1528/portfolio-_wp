@@ -18,7 +18,7 @@
     <section class="about-fv sub-fv">
         <div class="sub-fv__inner">
             <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/about1.jpg" media="(min-width: 768px)">
+                <source srcset="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/about_gallery4.jpg" media="(min-width: 768px)">
                 <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/about1.jpg" alt="私たちについてのトップ">
             </picture>
             <div class="sub-fv__heading">
