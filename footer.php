@@ -58,7 +58,7 @@
         <div class="footer__inner inner">
             <div class="footer__head">
                 <h1 class="footer__logo">
-                    <a href="index.html" class="footer__logo-link">
+                    <a href="<?php echo $top ?>" class="footer__logo-link">
                         <img src="<?php echo get_theme_file_uri(); ?>/dist/assets/images/common/header_logo.png" alt="フッターロゴ">
                     </a>
                 </h1>
